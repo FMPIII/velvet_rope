@@ -1,0 +1,126 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "materialize";
+@import "font-awesome";
+
+.picker__date-display {
+  background-color: grey;
+}
+.brand-logo {
+  font-family: "Courier New", monospace;
+}
+
+body {
+  background-color: rgba(#000000, 0.93);
+}
+
+.test {
+  border: solid 1px white;
+  height: auto;
+  width: auto;
+}
+.test2 {
+  border: 2px;
+}
+
+.line {
+  border: 1px solid white;
+}
+
+#gstart {
+	margin-left: auto;
+  margin-right: auto;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.055);
+}
+
+// ******* Materialized Overides Go Below ********
+ // ****Revervations Page *******
+.picker__date-display{
+  background-color: #34b4f4;
+}
+
+.btn-flat{
+  color: black;
+}
+
+// .booking_info input{
+//   background-color: #fee388 !important;
+//   height: 2rem !important;
+// }
+
+.booking_info input:not([type]),
+.booking_info input[type=text]:not(.browser-default),
+.booking_info input[type=password]:not(.browser-default),
+.booking_info input[type=email]:not(.browser-default),
+.booking_info input[type=url]:not(.browser-default),
+.booking_info input[type=time]:not(.browser-default),
+.booking_info input[type=date]:not(.browser-default),
+.booking_info input[type=datetime]:not(.browser-default),
+.booking_info input[type=datetime-local]:not(.browser-default),
+.booking_info input[type=tel]:not(.browser-default),
+.booking_info input[type=number]:not(.browser-default),
+.booking_info input[type=search]:not(.browser-default),
+.booking_info textarea.materialize-textarea {
+    background-color: transparent;
+    height: 2rem;
+    width: 50%;
+    float: right;
+    border: solid 2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: white;
+}
+
+.booking_info form{
+  margin-top: -27px;
+}
+
+select {
+  display: inline;
+  background-color: transparent;
+  width: 100px;
+  height: 2em;
+  margin-left: 93px;
+  border: solid 2px;
+  border-color: #34b4f4;
+}
+

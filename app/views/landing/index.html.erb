@@ -1,0 +1,66 @@
+
+
+<nav>
+    <div class="nav-wrapper black">
+      <a href="/" class="brand-logo">  The VelvetRope</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class="modal-trigger" href="#signin">Sign in</a></li>
+        <li><a class="modal-trigger" href="#signup">Sign up</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="signup" class="modal grey darken-4">
+      <div class="modal-content">
+        <%= render 'users/signup' %>
+      </div>
+    </div>
+
+
+    <div id="signin" class="modal grey darken-4">
+        <div class="modal-content">
+          <%= render 'users/login' %>
+        </div>
+      </div>
+<div class="parallax-container" >
+    <div class="parallax" id='landing_promo'>
+    <%= video_tag "landing_promo", autoplay: :autoplay, muted: true%>
+  </div>
+
+</div>
+<div class="section black">
+  <div class="row container">
+    <h2 class="header center">Welcome to the Velvet Rope</h2>
+    <br>
+    <div class="center-align zoom"><a href="city" class="white black-text waves-effect waves-light btn hoverable center">Enter.</a></div>
+    <br>
+    <p class="white-text center"> Club away the VIP way. Book your table now!</p>
+  </div>
+</div>
+<div class="parallax-container">
+  <div class="parallax">
+    <%= image_tag "background1" %>
+  </div>
+</div>
+
+
+
+<div class="line"></div>
+
+<footer class="page-footer black">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">The Velvet Rope</h5>
+                <p class="grey-text text-lighten-4">You can skip the line and go straight to the bottles.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+              <div class="networks">
+              <ul class="plain">
+                <li><a href="https://twitter.com/"><i class="icon fa fa-twitter">&nbsp;</i>Twitter</a></li>
+                <li><a href="https://www.facebook.com/"><i class="icon fa fa-facebook">&nbsp;</i>Facebook</a></li>
+                <li><a href="https://www.instagram.com/"><i class="icon fa fa-instagram">&nbsp;</i>Instagram</a></li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
